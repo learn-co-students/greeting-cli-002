@@ -12,7 +12,7 @@ describe './bin/greet executing a CLI Application' do
 
   it 'uses #gets.strip to capture the user input and set it equal to a variable called name' do 
     allow($stdout).to receive(:puts)
-    
+
     expect(self).to receive(:gets).and_return("Don")
     name = get_variable_from_file("./bin/greet", "name")
 
