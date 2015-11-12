@@ -1,9 +1,6 @@
 require_relative "../lib/greeting.rb"
 
-describe './lib/greeting.rb' do
-  it 'defines a greeting method' do
-    expect(defined?(greeting)).to be_truthy
-  end
+
 
   context '#greeting' do
     it 'takes in an argument of a persons name' do
@@ -20,4 +17,4 @@ describe './lib/greeting.rb' do
       expect(output).to include("Hello Sally. It's nice to meet you.")
     end
   end
-end
+
